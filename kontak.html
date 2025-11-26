@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Lab Fisika Medik & Spektroskopi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontak.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/Logo-Resmi-Unhas.png" alt="Logo Unhas">
+                    <span>Lab Fisika Medik & Spektroskopi</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="anggota.html">Anggota</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Kontak -->
+    <section class="hero-kontak">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <i class="bi bi-envelope-heart"></i>
+            </div>
+            <h1>Hubungi Kami</h1>
+            <p class="subtitle">Informasi kontak dan kolaborasi penelitian</p>
+        </div>
+    </section>
+
+    <!-- Kontak Content -->
+    <section class="kontak-content">
+        <div class="container">
+            <div class="kontak-grid">
+                <!-- Info Peneliti -->
+                <div class="info-peneliti">
+                    <h2>aqasyaaa</h2>
+                    <p class="role">Peneliti Laboratorium Fisika Medik & Spektroskopi</p>
+
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:aqasyaaaaclz@gmail.com">aqasyaaaaclz@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Institusi</h4>
+                            <p>Departemen Fisika FMIPA, Universitas Hasanuddin</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Lokasi</h4>
+                            <p>Jl. Perintis Kemerdekaan KM.10, Tamalanrea, Makassar, Sulawesi Selatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Kirim Pesan -->
+                <div class="form-pesan">
+                    <h2>Kirim Pesan</h2>
+                    <form id="kontakForm">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <select id="subjek" name="subjek" required>
+                                <option value="">Pilih subjek...</option>
+                                <option value="penelitian">Kolaborasi Penelitian</option>
+                                <option value="magang">Informasi Laboratorium</option>
+                                <option value="konsultasi">Praktikum & Pendidikan</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Kontak Tambahan -->
+    <section class="info-tambahan">
+        <div class="container">
+            <div class="info-tambahan-grid">
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>Departemen Fisika UNHAS</p>
+                    <a href="tel:+62411585024" class="contact-link">(0411) 585024</a>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat</p>
+                    <strong>08.00 - 16.00 WITA</strong>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h3>Website</h3>
+                    <p>Departemen Fisika</p>
+                    <a href="https://fisika.fmipa.unhas.ac.id" target="_blank"
+                        class="contact-link">fisika.fmipa.unhas.ac.id</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Lab Fisika Medik & Spektroskopi</h3>
+                <p>Departemen Fisika, FMIPA<br>Universitas Hasanuddin</p>
+                <p>Jl. Perintis Kemerdekaan Km.10, Tamalanrea<br>Makassar, Sulawesi Selatan 90245</p>
+            </div>
+            <div class="footer-links">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="anggota.html">Anggota</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Laboratorium Fisika Medik & Spektroskopi - Universitas Hasanuddin</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/kontak.js"></script>
+</body>
+
+</html>

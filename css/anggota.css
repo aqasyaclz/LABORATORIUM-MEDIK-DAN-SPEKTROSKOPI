@@ -1,0 +1,324 @@
+/* Anggota Page Specific Styles */
+
+/* Hero Anggota Section */
+.hero-anggota {
+    background: var(--gradient-2);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-anggota::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    animation: moveBackground 20s linear infinite;
+    z-index: 1;
+}
+
+.hero-anggota .hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-icon {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+.hero-anggota h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-anggota .subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 300;
+}
+
+/* Kepala Lab Section */
+.kepala-lab {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.kepala-lab .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.kepala-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.kepala-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 70px rgba(37, 99, 235, 0.2);
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(37, 99, 235, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kepala-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.badge-role {
+    display: inline-block;
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Dosen Lab Section */
+.dosen-lab {
+    padding: 5rem 0;
+    background: white;
+}
+
+.dosen-lab .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.dosen-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.dosen-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.dosen-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.dosen-card .profile-image {
+    width: 150px;
+    height: 150px;
+}
+
+.dosen-card h4 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dosen-card .badge-role {
+    font-size: 0.85rem;
+    padding: 0.4rem 1.2rem;
+}
+
+/* Anggota Tim Section */
+.anggota-tim {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.anggota-tim .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.anggota-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.anggota-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.anggota-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.anggota-card h5 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.anggota-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Active Nav Link */
+.nav-menu a.active {
+    color: var(--primary-color);
+}
+
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .dosen-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .anggota-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .dosen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .anggota-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-anggota {
+        min-height: 50vh;
+        padding: 6rem 1rem 3rem;
+    }
+    
+    .hero-anggota h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-icon {
+        font-size: 3.5rem;
+    }
+    
+    .dosen-grid,
+    .anggota-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .kepala-lab,
+    .dosen-lab,
+    .anggota-tim {
+        padding: 3rem 0;
+    }
+}
+
+/* Animation for cards on scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dosen-card,
+.anggota-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.dosen-card:nth-child(1) { animation-delay: 0.1s; }
+.dosen-card:nth-child(2) { animation-delay: 0.2s; }
+.dosen-card:nth-child(3) { animation-delay: 0.3s; }
+.dosen-card:nth-child(4) { animation-delay: 0.4s; }
+
+.anggota-card:nth-child(1) { animation-delay: 0.05s; }
+.anggota-card:nth-child(2) { animation-delay: 0.1s; }
+.anggota-card:nth-child(3) { animation-delay: 0.15s; }
+.anggota-card:nth-child(4) { animation-delay: 0.2s; }
+.anggota-card:nth-child(5) { animation-delay: 0.25s; }
+.anggota-card:nth-child(6) { animation-delay: 0.3s; }
+.anggota-card:nth-child(7) { animation-delay: 0.35s; }
+.anggota-card:nth-child(8) { animation-delay: 0.4s; }
+.anggota-card:nth-child(9) { animation-delay: 0.45s; }
+.anggota-card:nth-child(10) { animation-delay: 0.5s; }
+.anggota-card:nth-child(11) { animation-delay: 0.55s; }
+.anggota-card:nth-child(12) { animation-delay: 0.6s; }
+.anggota-card:nth-child(13) { animation-delay: 0.65s; }
+.anggota-card:nth-child(14) { animation-delay: 0.7s; }
+.anggota-card:nth-child(15) { animation-delay: 0.75s; }
